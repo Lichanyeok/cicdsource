@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
     @GetMapping("/")
     public String home(){
-        return "CI/CD Pipeline Basic Server v2";
+        return "Action 작성 이후 커밋";
     }
 }
