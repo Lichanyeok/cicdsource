@@ -1,4 +1,4 @@
-cname: CI-CDpipeline #Workflow의 이름
+name: CI-CDpipeline #Workflow의 이름
 on: #Workflow를 언제 실행할지 조건 설정 (이벤트 트리거)
   push: # main 브랜치에 push 할 때 실행 시키겠다.
     branches:
