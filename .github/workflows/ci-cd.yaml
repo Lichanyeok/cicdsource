@@ -1,4 +1,4 @@
-name: CI-CDpipeline #Workflow의 이름
+cname: CI-CDpipeline #Workflow의 이름
 on: #Workflow를 언제 실행할지 조건 설정 (이벤트 트리거)
   push: # main 브랜치에 push 할 때 실행 시키겠다.
     branches:
@@ -40,7 +40,7 @@ jobs:
         uses : actions/checkout@v3
         with:
           repository: Lichanyeok/cicdmanifest #manifest repository
-          token: ${{MANIFEST_REPO_TOKEN}}
+          token: ${{secrets.MANIFEST_REPO_TOKEN}}
           path: manifest-repo
 
       # Deployment 매니페스트의 이미지 태그 업데이트 및 커밋
