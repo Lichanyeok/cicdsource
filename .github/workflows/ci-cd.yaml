@@ -40,7 +40,7 @@ jobs:
         uses : actions/checkout@v3
         with:
           repository: Lichanyeok/cicdmanifest #manifest repository
-          token: ${{MANIFEST_REPO_TOKEN}}
+          token: ${{secrets.MANIFEST_REPO_TOKEN}}
           path: manifest-repo
 
       # Deployment 매니페스트의 이미지 태그 업데이트 및 커밋
