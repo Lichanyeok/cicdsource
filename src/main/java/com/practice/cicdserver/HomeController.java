@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
     @GetMapping("/")
     public String home(){
-        return "Action 작성 이후 커밋";
+        return "Manifest Repository 연결 확인";
     }
 }
