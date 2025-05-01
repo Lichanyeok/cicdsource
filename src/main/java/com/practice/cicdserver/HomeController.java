@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
     @GetMapping("/")
     public String home(){
-        return "Manifest Repository 연결 확인 33";
+        return "ArgoCD Application runs";
     }
 }
